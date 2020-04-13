@@ -1,24 +1,26 @@
-# UNO Bot
+# UNO_CN_Bot
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](./LICENSE)
 
-Telegram Bot that allows you to play the popular card game UNO via inline queries. The bot currently runs as [@unobot](http://telegram.me/unobot).
+一个可以在群里玩UNO的Telegram机器人。
 
-To run the bot yourself, you will need: 
-- Python (tested with 3.4+)
-- The [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) module
+创建机器人所需环境：
+
+- Python (3.4+)
+- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 - [Pony ORM](https://ponyorm.com/)
 
 ## Setup
-- Get a bot token from [@BotFather](http://telegram.me/BotFather) and change configurations in `config.json`.
-- Convert all language files from `.po` files to `.mo` by executing the bash script `compile.sh` located in the `locales` folder.
-  Another option is: `find . -maxdepth 2 -type d -name 'LC_MESSAGES' -exec bash -c 'msgfmt {}/unobot.po -o {}/unobot.mo' \;`.
-- Use `/setinline` and `/setinlinefeedback` with BotFather for your bot.
-- Install requirements (using a `virtualenv` is recommended): `pip install -r requirements.txt`
 
-You can change some gameplay parameters like turn times, minimum amount of players and default gamemode in `config.json`.
-Current gamemodes available: classic, fast and wild. Check the details with the `/modes` command.
+- 从[@BotFather](http://telegram.me/BotFather)获取机器人token，并填入`config.json`.
+- 在`locales`文件夹下，执行`compile.sh`，将所有语言文件由`.po`转化为`.mo`.
+  或执行: `find . -maxdepth 2 -type d -name 'LC_MESSAGES' -exec bash -c 'msgfmt {}/unobot.po -o {}/unobot.mo' \;`.
+- 在BotFather中为机器人启用 `/setinline` 和 `/setinlinefeedback`.
+- 安装模块 (建议使用 `virtualenv` ): `pip install -r requirements.txt`
 
-Then run the bot with `python3 bot.py`.
+你可以在`config.json`中更改一些游戏参数，如回合时间、最少玩家数量和默认游戏模式
 
-Code documentation is minimal but there.
+目前可用游戏模式: Classic , Sanic and Wild. （使用 `/modes` 命令查看模式内容）
+
+## Run
+执行 `python3 bot.py` 启动机器人.
