@@ -80,12 +80,12 @@ msgstr "牌堆中已经没有更多的牌了。"
 #: actions.py:157
 #, python-brace-format
 msgid "Bluff called! Giving 4 cards to {name}"
-msgstr "质疑成功！给 {name} 4 张牌"
+msgstr "嘻嘻，质疑成功！给 {name} 4 张牌"
 
 #: actions.py:171
 #, python-brace-format
 msgid "{name1} didn't bluff! Giving 6 cards to {name2}"
-msgstr "质疑 {name1} 失败！给 {name2} 6 张牌"
+msgstr "哦豁，质疑 {name1} 失败！给 {name2} 6 张牌"
 
 #: bot.py:60
 msgid ""
@@ -320,7 +320,7 @@ msgstr "🚀 Sanic 模式"
 
 #: results.py:116
 msgid "Gotta go fast! 🚀"
-msgstr "搞快点！ 🚀\""
+msgstr "GKD！ 🚀\""
 
 #: results.py:126
 msgid "🐉 Wild mode"
@@ -342,7 +342,7 @@ msgstr "过"
 
 #: results.py:180
 msgid "I'm calling your bluff!"
-msgstr "我要质疑你！"
+msgstr "我他妈直接质疑"
 
 #: results.py:203
 #, python-brace-format
